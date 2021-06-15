@@ -156,13 +156,15 @@ section {
 /* main footer */
 #footer {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: space-around;
   color: white;
   background: #343a40;
   min-height: 35%;
-  /* font-size: 2em; */
+}
+
+#footer .footer-links {
+  border: none;
 }
 
 /* Mobile Styles*/
@@ -198,9 +200,5 @@ section {
     background: #343a40;
     min-height: 35%;
     font-size: 1.5em;
-  }
-
-  #footer .footer-links {
-    border: none;
   }
 }
