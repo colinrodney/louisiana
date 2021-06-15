@@ -163,7 +163,7 @@ section {
   min-height: 35%;
 }
 
-#footer .footer-links {
+#footer > .footer-links {
   border: none;
 }
 
