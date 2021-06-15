@@ -161,8 +161,8 @@ section {
   justify-content: space-around;
   color: white;
   background: #090d11;
-  height: 35%;
-  font-size: 2em;
+  min-height: 35%;
+  /* font-size: 2em; */
 }
 
 /* Mobile Styles*/
@@ -197,7 +197,7 @@ section {
     color: white;
     background: #343a40;
     min-height: 35%;
-    /* font-size: 1.5em; */
+    font-size: 1.5em;
   }
 
   #footer .footer-links {
