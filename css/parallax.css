@@ -1,0 +1,224 @@
+/* CODEPEN.IO BACKGROUND IMAGES LINKED TO POSTIMAGE VIA FOLLOWING LINKS:
+https://i.postimg.cc/SQV7htY8/crawfish.jpg
+
+https://i.postimg.cc/MKF7cMDp/fleur-de-lis.jpg
+
+https://i.postimg.cc/13VpDmCc/la-state-capitol.jpg
+
+https://i.postimg.cc/J4n34cjF/mardi-gras-mask.jpg
+ */
+
+*{
+	box-sizing: border-box;
+}
+
+:root{
+	--hero-text-color: #fff;
+	--hero-font-size: 1.5rem;
+	--hero-padding: 1rem;
+}
+
+
+
+/* Utility Classes */
+	.hero-text{
+		color: var(--hero-text-color);
+		font-size: var(--hero-font-size);
+	}
+
+	a{
+	color: #e1e4eb;
+	text-decoration: none;
+	
+}
+
+	a:hover{
+		color: var(--hero-text-color);
+		opacity: .75;
+		text-decoration: none;
+		background: transparent;
+	}
+
+	.lead-paragraph{
+		font-size: 2rem;
+	}
+
+	#main-content{
+		height: 100vh;
+	}
+
+	section{
+		height: 100;
+	}
+
+	.section-title{
+	text-align: center;
+}
+
+.sections{
+	padding: 1rem;
+	font-size: 1.3em;
+	line-height: 1.5;
+}
+
+.hero{
+	height: 100%;
+	width: 100%;
+	padding: var(--hero-padding);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	margin-bottom: -3%;
+}
+
+#main-content a{
+		outline: none;
+		border: .50px solid #fff;
+		text-align: center;
+		padding: .50rem;
+	}
+
+		/* font awesome icon spacing */
+	.fas{
+		margin-right: 15px;
+	}
+
+
+/* hero-1 (Welcome + CTA) + section-1 article  */
+#hero-1{
+	/* overlay on parralax image */
+	background: linear-gradient(
+		rgba(0,0,0,0.50),
+		rgba(0,0,0,0.45)
+	),url("https://source.unsplash.com/uA4lQquUI4Y") no-repeat center center/cover fixed;
+
+	/* EXPLIIT DECLARATIONS FOR 
+	BACKGROUND PROPERTIES + VALUES
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;  */
+}
+
+#section-1{
+	/* position: relative; */
+	background: #48596c;
+	color: white;
+}
+
+
+/* hero-2 -Our History + section-2 article */
+#hero-2{
+	/* overlay on parralax image */
+	background: 
+	linear-gradient(
+		rgba(0,0,0,0.45),
+		rgba(0,0,0,0.45)
+		), url("../images/la-state-capitol.jpg") no-repeat center center/cover fixed;
+		height: 100%;
+		margin-bottom: -3%;
+	}
+
+	#section-2{
+	background: #8f000c; 
+	color: #e1e4eb;	
+}
+	
+/* hero-3 - Our Culture section-3 article */
+#hero-3{
+	/* overlay on parralax image */
+	background:
+	linear-gradient(
+		rgba(255,0,0,0.58),
+		rgba(255,0,0,0.45)
+		),url("../images/crawfish.jpg") no-repeat center center/cover fixed;
+	height: 100%;
+	margin-bottom: -4%;
+	object-fit: contain;
+	/* EXPLIIT DECLARATIONS FOR 
+	BACKGROUND PROPERTIES + VALUES
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;  */
+}
+
+#section-3{
+	background: #a1aab3;	
+}
+
+
+/* hero-4 - fleur-de-lis - (Image only) */
+#hero-4{
+	/* overlay on parralax image */
+	background:
+	linear-gradient(
+		rgba(0, 0, 0, 0.45),
+		rgba(255,0,0,0.45)
+		),
+		 url("../images/fleur-de-lis.png") no-repeat center center/cover fixed ;
+		 height: 100%;
+		 /* EXPLIIT DECLARATIONS FOR 
+	BACKGROUND PROPERTIES + VALUES
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;  */
+}
+
+
+/* main footer */
+#footer{
+	display: flex;
+	/* flex-direction: column; */
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+	background: #090d11;
+	height: 35%;
+	font-size: 2em;
+}
+
+
+	/* Mobile Styles*/
+	@media (max-width: 576px){
+		#hero-1 .hero-text{
+		color: var(--hero-text-color);
+		font-size: var(--hero-font-size);
+		margin-top: -250px;
+	}
+
+	/* font awesome icon spacing */
+	.fas{
+		margin-right: 15px;
+	}
+
+	/* hero-2 */
+	#main-content a{
+		outline: none;
+		border: .50px solid #fff;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: .50rem;
+	}
+
+	/* Main- Footer */
+	#footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+	background: #090d11;
+	height: 35%;
+	font-size: 1.5em;
+}
+
+	
+
+	}
